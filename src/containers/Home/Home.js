@@ -11,7 +11,7 @@ export default class Home extends Component {
 
         return (
             <div className={styles.home}>
-                <Helmet title="Home"/>
+                <Helmet title="Home" />
                 <p>Hola mundo</p>
             </div>
         );

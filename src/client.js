@@ -40,7 +40,7 @@ global.socket = initSocket();
 const component = (
     <Router render={(props) =>
               <ReduxAsyncConnect {...props} helpers={{client}} filter={item => !item.deferred} />
-          } history={history}>
+    } history={history}>
         {getRoutes(store)}
     </Router>
 );
@@ -59,7 +59,8 @@ if (process.env.NODE_ENV !== 'production') {
         || !dest.firstChild
         || !dest.firstChild.attributes
         || !dest.firstChild.attributes['data-react-checksum']) {
-        console.error('Server-side React render was discarded. Make sure that your initial render does not contain any client-side code.');
+        console.error('Server-side React render was discarded. ' +
+            'Make sure that your initial render does not contain any client-side code.');
     }
 }
 
