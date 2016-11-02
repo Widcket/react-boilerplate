@@ -5,7 +5,6 @@
 import 'babel-polyfill';
 
 import io from 'socket.io-client';
-import useScroll from 'scroll-behavior/lib/useStandardScroll';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
@@ -18,10 +17,9 @@ import getRoutes from './routes';
 import ApiClient from './helpers/ApiClient';
 
 const client = new ApiClient();
-const _browserHistory = useScroll(() => browserHistory)();
 const dest = document.getElementById('content');
-const store = createStore(_browserHistory, client, window.__data);
-const history = syncHistoryWithStore(_browserHistory, store);
+const store = createStore(browserHistory, client, window.__data);
+const history = syncHistoryWithStore(browserHistory, store);
 
 function initSocket() {
     const socket = io('', { path: '/ws' });
