@@ -9,11 +9,11 @@ import config from '../../config';
 @asyncConnect([
     {
         promise: ({
-          store: {
-            dispatch,
-            getState
-          }
-    }) => {
+            store: {
+                dispatch,
+                getState
+            }
+        }) => {
             const promises = [];
 
             if (!isInfoLoaded(getState())) {
@@ -26,29 +26,27 @@ import config from '../../config';
 ])
 
 export default class App extends Component {
-  static propTypes = {
-      children: PropTypes.object.isRequired
-  };
+    static propTypes = {
+        children: PropTypes.object.isRequired
+    };
 
-  static contextTypes = {
-      store: PropTypes.object.isRequired
-  };
+    static contextTypes = {
+        store: PropTypes.object.isRequired
+    };
 
-  componentWillReceiveProps(nextProps) {
+    componentWillReceiveProps(nextProps) {}
 
-  }
+    render() {
+        const styles = require('./App.scss');
 
-  render() {
-      const styles = require('./App.scss');
+        return (
+            <div className={styles.app}>
+                <Helmet {...config.app.head}/>
 
-      return (
-      <div className={styles.app}>
-        <Helmet {...config.app.head}/>
-
-        <div className={styles.appContent}>
-          {this.props.children}
-        </div>
-      </div>
-    );
-  }
+                <div className={styles.appContent}>
+                    {this.props.children}
+                </div>
+            </div>
+        );
+    }
 }
