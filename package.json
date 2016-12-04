@@ -106,7 +106,7 @@
     "compression": "^1.6.2",
     "express": "^4.14.0",
     "history": "^4.4.0",
-    "http-proxy": "^1.15.2",
+    "http-proxy": "^1.16.1",
     "immutable": "^3.8.1",
     "multireducer": "^3.0.2",
     "piping": "^1.0.0-rc.4",
