@@ -127,7 +127,7 @@
     "socket.io-client": "^1.5.1",
     "superagent": "^3.1.0",
     "url-loader": "^0.5.7",
-    "webpack-isomorphic-tools": "^2.6.4"
+    "webpack-isomorphic-tools": "^3.0.0"
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
