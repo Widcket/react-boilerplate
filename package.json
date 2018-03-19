@@ -108,7 +108,7 @@
     "history": "^4.4.0",
     "http-proxy": "^1.15.2",
     "immutable": "^3.8.1",
-    "multireducer": "^3.0.2",
+    "multireducer": "^3.1.1",
     "piping": "^1.0.0-rc.4",
     "pretty-error": "^2.0.2",
     "react": "^15.3.2",
