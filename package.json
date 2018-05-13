@@ -172,7 +172,7 @@
     "style-loader": "^0.15.0",
     "webpack": "^1.13.3",
     "webpack-dev-middleware": "^1.8.4",
-    "webpack-hot-middleware": "^2.13.1"
+    "webpack-hot-middleware": "^2.22.2"
   },
   "engines": {
     "node": "7.0.0"
