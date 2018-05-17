@@ -175,6 +175,6 @@
     "webpack-hot-middleware": "^2.13.1"
   },
   "engines": {
-    "node": "7.0.0"
+    "node": "10"
   }
 }
