@@ -156,7 +156,7 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^2.0.2",
     "mocha": "^3.1.2",
-    "node-sass": "^4.1.0",
+    "node-sass": "^4.10.0",
     "phantomjs": "^2.1.7+deprecated",
     "phantomjs-polyfill": "^0.0.2",
     "react-a11y": "^0.3.3",
