@@ -126,7 +126,7 @@
     "socket.io": "^1.5.1",
     "socket.io-client": "^1.5.1",
     "superagent": "^3.1.0",
-    "url-loader": "^0.5.7",
+    "url-loader": "^2.0.1",
     "webpack-isomorphic-tools": "^3.0.0"
   },
   "devDependencies": {
